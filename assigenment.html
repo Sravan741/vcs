@@ -6,7 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="gitlogo.jpg" alt="">
-    <h1>Git Commands with Definations:</h1>
+    <div style="width: 500px; margin: auto;">
+        <img src="gitlogo.jpg" alt="" width="480px">
+        <h1>GitHub Commands - Detailed Definitions</h1>
+    <ul style="text-align: justify;">
+        <li>
+            <p><strong>init:</strong> The <code>git init</code> command initializes a new Git repository in the current directory. It creates a hidden <code>.git</code> directory that contains all the metadata and structure required for Git to track the project. This command is the first step when starting to use Git for a new project.</p>
+            <p>Example: <code>git init</code> creates a repository, making the directory ready to track file changes.</p>
+        </li>
+        <li>
+            <p><strong>add:</strong> The <code>git add</code> command stages changes in specified files or directories. These changes are queued to be included in the next commit. Without staging changes, they won't be saved permanently to the repository.</p>
+            <p>Example: <code>git add filename</code> stages a specific file, while <code>git add foldername</code> stages all files within a folder.</p>
+        </li>
+        <li>
+            <p><strong>add .</strong>: A shorthand for staging all changes in the current directory and its subdirectories. This includes modified, newly created, or deleted files. It is a convenient way to prepare all changes for a commit.</p>
+            <p>Example: <code>git add .</code> stages every file that has been changed, added, or deleted in the current project directory.</p>
+        </li>
+        <li>
+            <p><strong>status:</strong> The <code>git status</code> command provides an overview of the repository's current state. It shows which files are staged for commit, which are modified but unstaged, and which files are untracked (new files not added to the repository).</p>
+            <p>Example: <code>git status</code> outputs detailed information about file states, helping track work in progress.</p>
+        </li>
+        <li>
+            <p><strong>log:</strong> The <code>git log</code> command displays the commit history of the repository. Each commit is listed with its unique identifier (SHA hash), author name, date, and commit message. This helps in understanding the changes and their order.</p>
+            <p>Example: <code>git log</code> shows a list of all commits, while <code>git log --oneline</code> displays a simplified view.</p>
+        </li>
+        <li>
+            <p><strong>reset:</strong> The <code>git reset</code> command is used to undo changes in a repository. It can unstage files from the staging area (<code>git reset</code>) or revert the repository to a specific previous commit, discarding subsequent changes (<code>git reset --hard</code>).</p>
+            <p>Example: <code>git reset HEAD filename</code> unstages a file, while <code>git reset --hard commit-hash</code> resets the repository to a specific commit.</p>
+        </li>
+        <li>
+            <p><strong>pull:</strong> The <code>git pull</code> command fetches the latest changes from a remote repository and integrates them into the current branch. It is a combination of two commands: <code>git fetch</code> (to retrieve changes) and <code>git merge</code> (to integrate them).</p>
+            <p>Example: <code>git pull origin main</code> fetches and merges updates from the main branch of the remote repository.</p>
+        </li>
+        <li>
+            <p><strong>push:</strong> The <code>git push</code> command uploads local commits to a remote repository. It updates the remote branch with the latest changes made locally, allowing team members to access them.</p>
+            <p>Example: <code>git push origin main</code> pushes the changes from the local main branch to the corresponding branch in the remote repository.</p>
+        </li>
+        <li>
+            <p><strong>branch:</strong> The <code>git branch</code> command is used to manage branches in a Git repository. It can create new branches, list existing branches, or delete branches. Branches allow working on features or bug fixes independently without affecting the main codebase.</p>
+            <p>Examples:</p>
+            <ul>
+                <li><code>git branch</code>: Lists all branches.</li>
+                <li><code>git branch branch-name</code>: Creates a new branch.</li>
+                <li><code>git branch -d branch-name</code>: Deletes a branch.</li>
+            </ul>
+        </li>
+    </ul>
+    </div>
 </body>
 </html>
